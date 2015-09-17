@@ -1,0 +1,11 @@
+<ul>
+  {{#each model as |todo|}}
+    <li>
+      {{todo.text}} &nbsp;&nbsp;&nbsp; <button {{action 'delete_todo' todo}}>delete</button>
+    </li>
+  {{/each}}
+</ul>
+
+<div class="new-todo-container">
+  {{input type='text' insert-newline='add_todo' value=todo_string placeholder='Add new todo'}}
+</div>
