@@ -1,2 +1,15 @@
-<br><br><br><br><br><br>
 <h1>Login</h1>
+
+<form {{action 'authenticate' on='submit'}}>
+  <label>
+    Email
+    {{focus-input value=identification name='identification' type='email' autofocus='autofocus'}}
+  </label>
+
+  <label>
+    Password
+    {{input value=password name='password' type='password'}}
+  </label>
+
+  <button type='submit'>Sign In</button>
+</form>
