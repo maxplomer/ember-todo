@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   #route for ember
   root to: 'static_pages#ember'
 
+  get 'login' => 'static_pages#ember'
+
   resources :todos, only: [:index, :create]
 
 end
